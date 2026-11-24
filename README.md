@@ -12,4 +12,4 @@ Importable Postman collection for the [whats360.live WhatsApp API](https://githu
 
 Status: built from the official reference, JSON validated, not run against production. The campaign recipients body is undocumented in the source.
 
-Website: https://whats360.live · WhatsApp: https://wa.me/whats360.live · Direct chat support: https://wa.me/201030741766 · info@whats360.live
+Website: https://whats360.live?utm_source=github&utm_medium=repo_readme&utm_campaign=growth30&utm_content=postman-footer · WhatsApp: https://wa.me/whats360.live · Direct chat support: https://wa.me/201030741766 · info@whats360.live
