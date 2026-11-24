@@ -1,6 +1,6 @@
-# Whats360 Postman Collection
+# whats360.live Postman Collection
 
-Importable Postman collection for the [Whats360 WhatsApp API](https://github.com/whats360-api/whats360-api-docs): send messages, manage devices, run campaigns.
+Importable Postman collection for the [whats360.live WhatsApp API](https://github.com/whats360-api/whats360-api-docs): send messages, manage devices, run campaigns.
 
 ## Use
 1. Import `whats360.postman_collection.json` and `whats360.postman_environment.json`.
@@ -12,4 +12,4 @@ Importable Postman collection for the [Whats360 WhatsApp API](https://github.com
 
 Status: built from the official reference, JSON validated, not run against production. The campaign recipients body is undocumented in the source.
 
-Website: https://whats360.live · Support: https://wa.me/whats360.live
+Website: https://whats360.live · WhatsApp: https://wa.me/whats360.live · Direct chat support: https://wa.me/201030741766 · info@whats360.live
