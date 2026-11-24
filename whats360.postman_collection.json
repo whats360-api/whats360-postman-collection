@@ -1,7 +1,7 @@
 {
   "info": {
-    "name": "Whats360 WhatsApp API (draft)",
-    "description": "Built from the official Whats360 developer reference. Not run against production. Set api_key and device_id in the environment. Never commit real values.",
+    "name": "whats360.live WhatsApp API (draft)",
+    "description": "Built from the official whats360.live developer reference. Not run against production. Set api_key and device_id in the environment. Never commit real values.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
@@ -749,4 +749,4 @@
       ]
     }
   ]
-                }
+}
