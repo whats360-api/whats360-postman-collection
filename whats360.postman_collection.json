@@ -1,0 +1,752 @@
+{
+  "info": {
+    "name": "Whats360 WhatsApp API (draft)",
+    "description": "Built from the official Whats360 developer reference. Not run against production. Set api_key and device_id in the environment. Never commit real values.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Messages",
+      "item": [
+        {
+          "name": "Send text message",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/send-text?token={{api_key}}&instance_id={{device_id}}&jid={{jid}}&msg=REPLACE_ME",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "send-text"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "jid",
+                  "value": "{{jid}}",
+                  "disabled": false
+                },
+                {
+                  "key": "msg",
+                  "value": "REPLACE_ME",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Send image",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/send-image?token={{api_key}}&instance_id={{device_id}}&jid={{jid}}&imageurl=REPLACE_ME&caption=REPLACE_ME",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "send-image"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "jid",
+                  "value": "{{jid}}",
+                  "disabled": false
+                },
+                {
+                  "key": "imageurl",
+                  "value": "REPLACE_ME",
+                  "disabled": false
+                },
+                {
+                  "key": "caption",
+                  "value": "REPLACE_ME",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Send video",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/send-video?token={{api_key}}&instance_id={{device_id}}&jid={{jid}}&videourl=REPLACE_ME&caption=REPLACE_ME",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "send-video"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "jid",
+                  "value": "{{jid}}",
+                  "disabled": false
+                },
+                {
+                  "key": "videourl",
+                  "value": "REPLACE_ME",
+                  "disabled": false
+                },
+                {
+                  "key": "caption",
+                  "value": "REPLACE_ME",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Send audio",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/send-audio?token={{api_key}}&instance_id={{device_id}}&jid={{jid}}&audiourl=REPLACE_ME",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "send-audio"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "jid",
+                  "value": "{{jid}}",
+                  "disabled": false
+                },
+                {
+                  "key": "audiourl",
+                  "value": "REPLACE_ME",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Send document",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/send-doc?token={{api_key}}&instance_id={{device_id}}&jid={{jid}}&docurl=REPLACE_ME&caption=REPLACE_ME",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "send-doc"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "jid",
+                  "value": "{{jid}}",
+                  "disabled": false
+                },
+                {
+                  "key": "docurl",
+                  "value": "REPLACE_ME",
+                  "disabled": false
+                },
+                {
+                  "key": "caption",
+                  "value": "REPLACE_ME",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Devices",
+      "item": [
+        {
+          "name": "List devices",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/instances?token={{api_key}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "instances"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create device",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/instances/create?token={{api_key}}&id=REPLACE_ME&name=REPLACE_ME",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "instances",
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "id",
+                  "value": "REPLACE_ME",
+                  "disabled": false
+                },
+                {
+                  "key": "name",
+                  "value": "REPLACE_ME",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Connect device",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/instances/connect?token={{api_key}}&instance_id={{device_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "instances",
+                "connect"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Disconnect device (changes device state)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/instances/disconnect?token={{api_key}}&instance_id={{device_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "instances",
+                "disconnect"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Device status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/instances/status?token={{api_key}}&instance_id={{device_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "instances",
+                "status"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "QR code (JSON)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/instances/qr?token={{api_key}}&instance_id={{device_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "instances",
+                "qr"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Interactive QR page (open in a browser)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/instances/qr-page?token={{api_key}}&instance_id={{device_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "instances",
+                "qr-page"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Delete device (destructive)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/instances/delete?token={{api_key}}&instance_id={{device_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "instances",
+                "delete"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Campaigns",
+      "item": [
+        {
+          "name": "List campaigns",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/campaigns?token={{api_key}}&instance_id={{device_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "campaigns"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create campaign",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/campaigns/create?token={{api_key}}&instance_id={{device_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "campaigns",
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"test\",\n  \"message_content\": \"Hello {{name}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Add recipients (body not documented)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/campaigns/recipients?token={{api_key}}&instance_id={{device_id}}&campaign_id={{campaign_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "campaigns",
+                "recipients"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "campaign_id",
+                  "value": "{{campaign_id}}",
+                  "disabled": false
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            },
+            "description": "Body shape is not documented in the official source. Fill it from the dashboard Developers page."
+          }
+        },
+        {
+          "name": "Start campaign",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/campaigns/start?token={{api_key}}&instance_id={{device_id}}&campaign_id={{campaign_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "campaigns",
+                "start"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "campaign_id",
+                  "value": "{{campaign_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Pause campaign",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/campaigns/pause?token={{api_key}}&instance_id={{device_id}}&campaign_id={{campaign_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "campaigns",
+                "pause"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "campaign_id",
+                  "value": "{{campaign_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Resume campaign",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/campaigns/resume?token={{api_key}}&instance_id={{device_id}}&campaign_id={{campaign_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "campaigns",
+                "resume"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "campaign_id",
+                  "value": "{{campaign_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Stop campaign",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/campaigns/stop?token={{api_key}}&instance_id={{device_id}}&campaign_id={{campaign_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "campaigns",
+                "stop"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "campaign_id",
+                  "value": "{{campaign_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Campaign status and stats",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/campaigns/status?token={{api_key}}&instance_id={{device_id}}&campaign_id={{campaign_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "campaigns",
+                "status"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "campaign_id",
+                  "value": "{{campaign_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Delete campaign",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/campaigns/delete?token={{api_key}}&instance_id={{device_id}}&campaign_id={{campaign_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "campaigns",
+                "delete"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{api_key}}"
+                },
+                {
+                  "key": "instance_id",
+                  "value": "{{device_id}}",
+                  "disabled": false
+                },
+                {
+                  "key": "campaign_id",
+                  "value": "{{campaign_id}}",
+                  "disabled": false
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+                }
